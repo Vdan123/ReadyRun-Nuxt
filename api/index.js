@@ -5,10 +5,10 @@ const app = express()
 
 // Require API routes
 const users = require('./routes/users')
-
+const downloads = require('./routes/downloads')
 // Import API Routes
 app.use(users)
-app.use(test)
+app.use(downloads)
 
 // Export express app
 module.exports = app

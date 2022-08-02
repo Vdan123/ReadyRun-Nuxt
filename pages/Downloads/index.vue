@@ -35,7 +35,6 @@ export default {
 <style module scoped>
 .container {
   max-width: 960px;
-  margin: 0;
   padding: 0;
   margin: 0 auto;
 }

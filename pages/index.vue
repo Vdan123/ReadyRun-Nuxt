@@ -1,40 +1,45 @@
 <template>
   <v-container :class="$style.container" fluid>
-    <div :class="$style.page">
-      <h2>
-        Download
-      </h2>
-      <div :class="$style.image" />
-    </div>
-
-    <div class="d-flex my-4">
-      <v-btn
-        class="mx-auto"
-        color="#23272a"
-        dark
-        large
-        style="border-radius: 28px;"
-      >
-        <v-icon class="mr-2">
-          mdi-download
-        </v-icon>
-        <span class="text-capitalize">
-          Windows 版下载
-        </span>
-      </v-btn>
-    </div>
+    <v-row :class="$style.page">
+      <v-col>
+        <v-slide-x-reverse-transition>
+          <div v-show="show" :class="$style.image" />
+        </v-slide-x-reverse-transition>
+      </v-col>
+      <v-col>
+        <v-slide-y-reverse-transition>
+          <Downloads v-show="show" />
+        </v-slide-y-reverse-transition>
+      </v-col>
+    </v-row>
   </v-container>
 </template>
 
 <script>
+import '@mdi/font/css/materialdesignicons.css'
+import Downloads from '../components/Downloads'
+
 export default {
-  name: 'App'
+  name: 'App',
+  components: {
+    Downloads
+  },
+  data() {
+    return {
+      show: false
+    }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.show = true
+    }, 400)
+  }
 }
 </script>
 
 <style module scoped>
 .container {
-  max-width: 960px;
+  max-width: 1180px;
   padding: 0;
   margin: 0 auto;
 }

@@ -11,6 +11,7 @@
     "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore ."
   },
   "dependencies": {
+    "@mdi/font": "^7.0.96",
     "@nuxt/http": "latest",
     "express": "latest",
     "nuxt": "latest"

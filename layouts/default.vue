@@ -2,8 +2,8 @@
   <v-app id="app">
     <v-app-bar
       app
-      color="#f6f6f6"
-      flat
+      color="#fffefc"
+      elevate-on-scroll
       light
       outlined
     >
@@ -16,7 +16,7 @@
         </span>
       </v-app-bar-title>
     </v-app-bar>
-    <v-main>
+    <v-main style="background: #fffefc;">
       <Nuxt />
     </v-main>
   </v-app>

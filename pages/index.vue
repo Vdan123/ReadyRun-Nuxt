@@ -16,7 +16,6 @@
 </template>
 
 <script>
-import '@mdi/font/css/materialdesignicons.css'
 import Downloads from '../components/Downloads'
 
 export default {

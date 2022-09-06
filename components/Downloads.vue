@@ -10,7 +10,7 @@
       class="mx-auto mt-2"
       color="#23272a"
       dark
-      href="http://10.255.128.149/download/flavor/ReadyRun/1.1.2/windows_64/ReadyRun.Setup.1.1.2.exe"
+      href="http://10.255.128.149/download/flavor/ReadyRun/1.1.5/windows_64/ReadyRun.Setup.1.1.5.exe"
       style="border-radius: 28px;"
       x-large
     >
@@ -18,7 +18,7 @@
         mdi-download
       </v-icon>
       <span class="text-capitalize">
-        Windows 版下载
+        Windows_1.1.5 版下载
       </span>
     </v-btn>
   </v-sheet>

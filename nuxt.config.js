@@ -10,7 +10,7 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: 'ReadyRun',
     meta: [
       { charset: 'utf-8' },
       {
@@ -20,7 +20,7 @@ export default {
       {
         hid: 'description',
         name: 'description',
-        content: process.env.npm_package_description || ''
+        content: 'ReadyRun集合工时系统、员工自助、嗨学城等办公常用功能，小巧、便捷、高效，让你的工作更轻松。'
       }
     ],
     link: [
@@ -28,6 +28,11 @@ export default {
         rel: 'icon',
         type: 'image/x-icon',
         href: '/favicon.ico'
+      },
+      {
+        rel: 'stylesheet',
+        type: 'text/css',
+        href: 'https://cdn.jsdelivr.net/npm/@mdi/font@6.x/css/materialdesignicons.min.css'
       }
     ]
   },
@@ -57,7 +62,16 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/vuetify'
   ],
-
+  vuetify: {
+    components: [
+      'VBtn',
+      'VSheet',
+      'VAppBar',
+      'VMain',
+      'VContainer',
+      'VApp'
+    ]
+  },
   /*
   ** Nuxt.js modules
   */
@@ -77,7 +91,7 @@ export default {
   ** For deployment you might want to edit host and port
   */
   server: {
-    port: 8000 // default: 3000
+    port: 3000 // default: 3000
     // host: '0.0.0.0' // default: localhost
   },
 
